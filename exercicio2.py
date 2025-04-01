@@ -1,0 +1,6 @@
+n1 = int(input("informe o primeiro número: "))
+n2 = int(input("informe o segundo número: "))
+print (f"a soma de {n1} + {n2} = \033[31m{n1 + n2}\033[m")
+print (f"a subtração de {n1} - {n2} = \033[32m{n1 - n2}\033[m")
+print (f"a divisão de {n1} / {n2} = \033[33m{n1 / n2}\033[m")
+print (f"a multiplicação de {n1} x {n2} = \033[34m{n1 * n2}\033[m")
