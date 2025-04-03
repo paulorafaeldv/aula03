@@ -1,9 +1,9 @@
-c = input("Qual o tipo de combustível? Escreva G para gasolina e E para etanol: ").strip().lower()
+c = input("Qual o tipo de combustível? Escreva G para gasolina e E para etanol: ").strip()
 v = float(input("Informe a quantidade de litros: "))
-if c == 'e':
+if c[0] == 'e' or 'E':
     r = v * 4.9
     print (f"O valor será R${r:.2f}")
-elif c == 'g':
+elif c[0] == 'g' or 'G':
     r = v * 5.8
     print (f"O valor será R${r:.2f}")
 else:
