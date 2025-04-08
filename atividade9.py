@@ -1,27 +1,28 @@
 n = int(input("Digite um número de 1 a 12: "))
-if n < 1 or n > 12:
-    print ("Valor inválido")
-elif n == 1:
-    print ("Janeiro")
-elif n == 2:
-    print ("Fevereiro")
-elif n == 3:
-    print ("Março")
-elif n == 4:
-    print ("Abril")
-elif n == 5:
-    print ("Maio")
-elif n == 6:
-    print ("Junho")
-elif n == 7:
-    print ("Julho")
-elif n == 8:
-    print ("Agosto")
-elif n == 9:
-    print ("Setembro")
-elif n == 10:
-    print ("Outubro")
-elif n == 11:
-    print ("Novembro")
-elif n == 12:
-    print ("Dezembro")
+match n:
+    case 1:
+        print ("janeiro")
+    case 2:
+        print("fevereiro")
+    case 3:
+        print("março")
+    case 4:
+        print("abril")
+    case 5:
+        print("maio")
+    case 6:
+        print("junho")
+    case 7:
+        print("julho")
+    case 8:
+        print("agosto")
+    case 9:
+        print("setembro")
+    case 10:
+        print("outubro")
+    case 11:
+        print("novembro")
+    case 12:
+        print("dezembro")
+    case _:
+        print ("invalido")
